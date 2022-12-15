@@ -1,0 +1,37 @@
+// Переменные цветов
+$color-white: #ffffff;
+$color-black: #000000;
+$main-blue: #3e9cdc;
+$secondary-blue: #286690;
+$text-button: #2a2b30;
+$text-descr: #bbbbbb;
+$text-placeholder: #272733;
+$button-border: #6f6d7b;
+$color-point-form: #c4c4c4;
+$header-background: rgba(16, 16, 29, 0.9);
+$select-bgc: rgba(61, 64, 80, 0.85);
+$color-slider-bgc: #42a9ed;
+$color-slider-border: #286690;
+$color-select-option-hover: #42a9ed;
+$text-hover: #43abf0;
+$color-footer: #3d4050;
+$footer-text: #c3c3c3;
+$slider-hover: #b32225;
+$modal-blackout: rgba(0, 0, 0, .9);
+
+// Переменные вьюпортов
+$tablet-width: 1184px;
+$mobile-width: 767px;
+
+// Переменные шрифтов
+$lato: "Lato", "Verdana", sans-serif;
+$raleway: "Raleway", "Verdana", sans-serif;
+
+// Переменные css
+:root {
+    --color-slider: rgba(255, 255, 255, 0.7);
+    --color-slider-border: rgba(255, 255, 255, 1);
+    --color-white: #ffffff;
+    --secondary-blue: #286690;
+    --color-select-option-hover: #42a9ed;
+}

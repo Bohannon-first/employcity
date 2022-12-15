@@ -1,0 +1,164 @@
+.making-order {
+    background-image: url("../img/background/making-order-desktop.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 880px;
+    padding-top: 120px;
+    margin-bottom: -80px;
+
+    @media (max-width: $tablet-width) {
+        padding-top: 95px;
+        min-height: 900px;
+    }
+
+    @media (max-width: $mobile-width) {
+        padding-top: 50px;
+        margin-bottom: 0;
+        padding-bottom: 50px;
+    }
+
+    .container {
+        min-height: inherit;
+
+        @media (max-width: $tablet-width) {
+            min-height: auto;
+        }
+    }
+
+    .making-order__descr-wrapper {
+        text-align: center;
+    }
+
+    .making-order__title {
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 43px;
+        text-transform: uppercase;
+        color: $color-white;
+        margin-bottom: 30px;
+
+        @media (max-width: $tablet-width) {
+            font-size: 30px;
+        }
+
+        @media (max-width: $mobile-width) {
+            font-size: 25px;
+            margin-bottom: 22px;
+        }
+
+        span {
+            color: $main-blue;
+        }
+    }
+
+    .making-order__notice {
+        font-size: 18px;
+        line-height: 21px;
+        color: $text-descr;
+
+        @media (max-width: $mobile-width) {
+            font-size: 16px;
+        }
+    }
+
+    .making-order__sheme-work-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-top: 80px;
+        margin-bottom: 80px;
+        padding: 0 35px;
+
+        @media (max-width: $tablet-width) {
+            padding: 0 15px;
+            margin-bottom: 60px;
+        }
+
+        @media (max-width: $mobile-width) {
+            padding: 0;
+            justify-content: initial;
+            flex-direction: column;
+            margin-top: 35px;
+        }
+    }
+
+    .making-order__sheme-work-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        min-width: 209px;
+
+        @media (max-width: $tablet-width) {
+            min-width: max-content;
+        }
+
+        div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background-color: $main-blue;
+            border: 5px solid $secondary-blue;
+            box-sizing: border-box;
+            margin-bottom: 20px;
+
+            @media (max-width: $tablet-width) {
+                width: 80px;
+                height: 80px;
+                margin-bottom: 15px;
+            }
+
+            @media (max-width: $mobile-width) {
+                margin-top: 15px;
+            }
+        }
+
+        span {
+            font-size: 16px;
+            line-height: 19px;
+            color: $color-white;
+            text-align: center;
+
+            @media (max-width: $tablet-width) {
+                font-size: 10px;
+                line-height: 15px;
+            }
+
+            @media (max-width: $mobile-width) {
+                font-size: 15px;
+                line-height: 1.5rem;
+            }
+        }
+    }
+
+    .making-order__sheme-work-item:not(:last-child)::before {
+        position: absolute;
+        content: '';
+        top: 44px;
+        right: 38px;
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        background-color: $color-point-form;
+        box-shadow: 25px 0 0 0 $color-point-form, 50px 0 0 0 $color-point-form, 75px 0 0 0 $color-point-form, 100px 0 0 0 $color-point-form;
+
+        @media (max-width: $tablet-width) {
+            position: absolute;
+            content: '';
+            top: 44px;
+            right: -9px;
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background-color: $color-point-form;
+            box-shadow: 20px 0 0 0 $color-point-form, 40px 0 0 0 $color-point-form;
+        }
+
+        @media (max-width: $mobile-width) {
+            display: none;
+        }
+    }
+}

@@ -1,0 +1,159 @@
+.form {
+
+    .form__fieldset-list {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0;
+        border: 0;
+
+        @media (max-width: $tablet-width) {
+            justify-content: space-between;
+            margin: 0;
+        }
+
+        @media (max-width: $mobile-width) {
+            flex-direction: column;
+            justify-content: initial;
+        }
+    }
+
+    .form__item {
+        width: 370px;
+        margin-bottom: 30px;
+
+        @media (max-width: $tablet-width) {
+            width: 300px;
+        }
+    }
+
+    .form__item--slider {
+        width: 770px;
+
+        @media (max-width: $tablet-width) {
+            width: 767px;
+        }
+
+        @media (max-width: $mobile-width) {
+            width: 300px;
+        }
+    }
+
+    .form__item-slider-descr {
+        display: inline-block;
+        color: $color-white;
+        margin-bottom: 16px;
+
+        @media (max-width: $mobile-width) {
+            margin-bottom: 37px;
+        }
+    }
+
+    .form__item:not(.form__item--input-name):not(:last-child) {
+        margin-right: 30px;
+
+        @media (max-width: $tablet-width) {
+            margin-right: 0;
+        }
+    }
+
+    .form__input {
+        width: inherit;
+        padding: 12px 10px;
+        box-sizing: border-box;
+        font-size: 18px;
+        line-height: 21px;
+        color: $text-placeholder;
+
+        @media (max-width: $tablet-width) {
+            padding: 10px 10px;
+            font-size: 14px;
+            line-height: 19px;
+        }
+    }
+
+    .form__input::placeholder {
+        color: $text-placeholder;
+    }
+
+    .form__input--select-system {
+        cursor: pointer;
+
+        option {
+            background-color: $text-placeholder;
+            color: $color-white;
+            font-size: 18px;
+        }
+
+        option:hover {
+            background-color: transparent;
+        }
+    }
+
+    .form__item-label--attach-file {
+        display: flex;
+        justify-content: center;
+        width: inherit;
+        border-radius: 3px;
+        font-weight: 600;
+        font-size: 15px;
+        text-transform: uppercase;
+        line-height: 18px;
+        padding: 12px 12px;
+        background-color: $color-white;
+        border: 2px solid $main-blue;
+        box-sizing: border-box;
+        cursor: pointer;
+
+        svg {
+            margin-right: 10px;
+        }
+
+        @media (max-width: $tablet-width) {
+            padding: 10px 10px;
+            font-size: 14px;
+        }
+    }
+
+    .form__item-label--attach-file:hover {
+        background-color: $color-footer;
+        color: $color-white;
+    }
+
+    .form__item-label--attach-file:active {
+        opacity: 0.5;
+    }
+}
+
+// Красная обводка, если поля ввода не заполнены
+.form__input--error {
+    border: 2px solid $slider-hover;
+}
+
+// Класс с анимацией тряски полей ввода при их незаполненности
+.form__input--shake-error {
+    animation: shake .4s;
+}
+
+// Тряска в случае ошибки
+@keyframes shake {
+
+    0%,
+    100% {
+        transform: translateX(0);
+    }
+
+    10%,
+    30%,
+    50%,
+    70%,
+    90% {
+        transform: translateX(-15px);
+    }
+
+    20%,
+    40%,
+    60%,
+    80% {
+        transform: translateX(15px);
+    }
+}

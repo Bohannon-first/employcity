@@ -1,0 +1,77 @@
+.button-main,
+.button-secondary {
+    display: block;
+    box-sizing: border-box;
+    text-align: center;
+    text-transform: uppercase;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.button-main:hover {
+    background-color: $secondary-blue;
+}
+
+.button-main:active {
+    opacity: 0.5;
+}
+
+.button-secondary:hover {
+    background-color: $color-footer;
+    color: $color-white;
+}
+
+.button-secondary:active {
+    opacity: 0.5;
+}
+
+.button-main--order {
+    width: 183px;
+    padding: 15px 15px;
+    background-color: $main-blue;
+    color: $color-white;
+    margin-right: 30px;
+
+    @media (max-width: $mobile-width) {
+        width: 140px;
+        margin-right: 5px;
+        padding: 10px 10px;
+    }
+}
+
+.button-secondary--more {
+    width: 183px;
+    padding: 15px 15px;
+    background-color: $color-white;
+    color: $text-button;
+    border: 1px solid $button-border;
+
+    @media (max-width: $mobile-width) {
+        width: 140px;
+        padding: 10px 10px;
+    }
+}
+
+.button-secondary--attach-file {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+
+.button-main--send-form {
+    color: $color-white;
+    background-color: $main-blue;
+    padding: 17px 17px;
+    border: 1px solid $color-white;
+    width: 370px;
+    margin: 0 auto;
+    margin-top: 10px;
+
+    @media (max-width: $tablet-width) {
+        padding: 10px 10px;
+        width: 300px;
+    }
+}

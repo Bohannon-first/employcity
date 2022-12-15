@@ -1,0 +1,94 @@
+.promo {
+    background-image: url("../img/background/promo-desktop.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 850px;
+
+    @media (max-width: $tablet-width) {
+        background-image: url("../img/background/promo-tablet.jpg");
+        min-height: 738px;
+    }
+
+    @media (max-width: $mobile-width) {
+        background-image: url('../img/background/promo-mobile.jpg');
+        min-height: 692px;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        min-height: inherit;
+    }
+
+    .promo__title {
+        font-size: 48px;
+        font-weight: 700;
+        line-height: 57px;
+        font-family: $lato;
+        color: $color-black;
+        width: 780px;
+        margin-bottom: 80px;
+        text-transform: uppercase;
+
+        span {
+            color: $main-blue;
+        }
+
+        @media (max-width: $tablet-width) {
+            font-size: 40px;
+            line-height: 52px;
+        }
+
+        @media (max-width: $mobile-width) {
+            font-size: 25px;
+            line-height: 35px;
+            width: auto;
+            text-align: center;
+            margin-bottom: 45px;
+        }
+
+        br {
+            @media (max-width: $mobile-width) {
+                display: none;
+            }
+        }
+    }
+
+    .promo__advantages-descr {
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 24px;
+        margin-bottom: 10px;
+
+        @media (max-width: $mobile-width) {
+            margin-bottom: 20px;
+        }
+    }
+
+    .promo__advantages-item {
+        font-weight: 400;
+        font-size: 20;
+        line-height: 24px;
+    }
+
+    .promo__advantages-list {
+        padding-left: 10px;
+    }
+
+    .promo__advantages-item:not(:last-child) {
+        margin-bottom: 5px;
+    }
+
+    .promo__buttons-wrapper {
+        display: flex;
+        margin-top: 80px;
+
+        @media (max-width: $mobile-width) {
+            width: auto;
+            padding: 0 10px;
+            justify-content: space-between;
+        }
+    }
+}

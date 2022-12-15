@@ -1,0 +1,21 @@
+.rs-container .rs-scale {
+    display: none;
+}
+
+.rs-tooltip-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.rs-container .rs-bg,
+.rs-container .rs-selected {
+    height: 6px;
+}
+
+.rs-container .rs-pointer {
+    top: -3px
+}
+
+.rs-container .rs-pointer:hover {
+    background-color: $slider-hover;
+}

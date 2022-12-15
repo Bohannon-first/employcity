@@ -5,8 +5,188 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Employcity testing</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Raleway:wght@800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/rSlider.min.css">
+  <link rel="stylesheet" href="./css/main.min.css">
 </head>
 <body>
-
+  <header class="page-header">
+    <div class="container">
+      <div class="page-header__logo-wrapper">
+        <a class="page-header__logo" href="#">
+          <img src="img/content/main-logo.png" alt="Логотип LoremIpsum.Net" width="245" height="21">
+        </a>
+      </div>
+      <nav class="main-nav">
+        <ul class="main-nav__list main-nav__list--closed">
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">Бизнес</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">О нас</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">Цены</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">Оформить заказ</a>
+          </li>
+        </ul>
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+        <button class="main-nav__toggle-close" type="button">
+          <span class="visually-hidden">Закрыть меню</span>
+        </button>
+      </nav>
+    </div>
+  </header>
+  <main class="page-main">
+    <section class="promo">
+      <div class="container">
+        <h1 class="promo__title"><span>Lorem ipsum</span> dolor sit<br> amet
+          consectetur <span>adipiscing</span></h1>
+          <div class="promo__advantages">
+            <p class="promo__advantages-descr">At vero eos et accusamus et iusto odio dignissimos ducimus!</p>
+            <ul class="promo__advantages-list">
+              <li class="promo__advantages-item">- Totam rem aperiam eaque ipsa</li>
+              <li class="promo__advantages-item">- Sit voluptatem accusantium doloremque laudantium</li>
+              <li class="promo__advantages-item">- Sed ut perspiciatis, unde omnis iste natus error</li>
+            </ul>
+          </div>
+          <div class="promo__buttons-wrapper">
+            <a class="button-main button-main--order" href="#">Заказать</a>
+            <a class="button-secondary button-secondary--more" href="#">Подробнее</a>
+          </div>
+      </div>
+    </section>
+    <section class="making-order">
+      <div class="container">
+        <div class="making-order__descr-wrapper">
+          <h2 class="making-order__title">Оформление <span>заказа</span></h2>
+          <p class="making-order__notice">Перед заполнением формы ознакомьтесь с нашей схемой работы!</p>
+        </div>
+        <ul class="making-order__sheme-work-list">
+          <li class="making-order__sheme-work-item">
+            <div>
+              <img src="img/content/icon/icon-magnifier.svg" alt="Иконка лупы">
+            </div>
+            <span>Lorem ipsum dolorsit<br> amet</span>
+          </li>
+          <li class="making-order__sheme-work-item">
+            <div>
+              <img src="img/content/icon/icon-percent.svg" alt="Иконка процентов">
+            </div>
+            <span>Сonsecteturadipiscing elit</span>
+          </li>
+          <li class="making-order__sheme-work-item">
+            <div>
+              <img src="img/content/icon/icon-document.svg" alt="Иконка документа">
+            </div>
+            <span>Sed do eiusmod tempor</span>
+          </li>
+          <li class="making-order__sheme-work-item">
+            <div>
+              <img src="img/content/icon/icon-letter.svg" alt="Иконка письма">
+            </div>
+            <span>Esse cillum doloreeu fugiat</span>
+          </li>
+          <li class="making-order__sheme-work-item">
+            <div>
+              <img src="img/content/icon/icon-money.svg" alt="Иконка денег">
+            </div>
+            <span>Excepteur sint occaecat<br> cupidatat non proident</span>
+          </li>
+        </ul>
+        <form class="form" action="#" method="post" enctype="multipart/form-data" autocomplete="off" target="_blank">
+          <fieldset class="form__fieldset-list">
+            <div class="form__item">
+              <select class="form__input form__input--select-system" name="type-system" id="type-system">
+                <option selected>Выберите тип системы</option>
+                <option value="1">Sed ut perspiciatis</option>
+                <option value="2">Nemo enim ipsam</option>
+                <option value="3">Et harum quidem</option>
+                <option value="4">Temporibus autem</option>
+                <option value="5">Itaque earum rerum</option>
+                <option value="6">Duis elementum metus</option>
+                <option value="7">Sed vestibulum feugia</option>
+                <option value="8">Quisque sodales viverra</option>
+                <option value="9">Proin bibendum quam</option>
+                <option value="10">Praesent auctor nunc</option>
+              </select>
+            </div>
+            <div class="form__item form__item--input-field">
+              <label class="visually-hidden" for="email" aria-label="Введите свой e-mail">Ваш e-mail</label>
+              <input class="form__input form__input--data" type="email" name="email" id="email" placeholder="Ваш e-mail">
+            </div>
+            <div class="form__item form__item--input-field form__item--input-name">
+              <label class="visually-hidden" for="your-name" aria-label="Введите свое имя">Ваше имя</label>
+              <input class="form__input form__input--data" type="text" name="your-name" id="your-name" placeholder="Ваше имя">
+            </div>
+            <div class="form__item form__item--slider">
+                <span class="form__item-slider-descr">Sed ut perspiciatis, unde omnis iste natus</span>
+              <label class="visually-hidden" for="sampleSlider"></label>
+              <input type="text" id="sampleSlider">
+            </div>
+            <div class="form__item">
+              <label class="form__item-label form__item-label--attach-file" for="attach-file">
+                <svg width="17" height="20">
+                  <use xlink:href="img/sprite.svg#icon-attach-file"></use>
+                </svg>
+                Прикрепить файл</label>
+              <input class="button-secondary button-secondary--attach-file" type="file" name="attach-file" id="attach-file" multiple>
+            </div>
+          </fieldset>
+          <button class="button-main button-main--send-form" type="submit">Отправить</button>
+        </form>
+      </div>
+    </section>
+  </main>
+  <footer class="page-footer">
+    <div class="container">
+      <span class="page-footer__copyright">© 2018 «LoremIpsum.net» Все права защищены.</span>
+      <ul class="page-footer__payment-system-list">
+        <li class="page-footer__payment-system-item">
+          <svg width="20" height="20">
+            <use xlink:href="img/sprite.svg#icon-qiwi-wallet"></use>
+          </svg>
+          Qiwi wallet</li>
+        <li class="page-footer__payment-system-item">
+          <svg width="20" height="20">
+            <use xlink:href="img/sprite.svg#icon-yandex-money"></use>
+          </svg>
+          Yandex Money</li>
+        <li class="page-footer__payment-system-item">
+          <svg width="20" height="20">
+            <use xlink:href="img/sprite.svg#icon-web-money"></use>
+          </svg>
+          Web Money</li>
+      </ul>
+      <ul class="page-footer__contacts-list">
+        <li class="page-footer__contacts-item">
+          <svg width="20" height="20">
+            <use xlink:href="img/sprite.svg#icon-mail-contacts"></use>
+          </svg>
+          <a class="page-footer__contacts-link" href="mailto:info@ipsum228.com" aria-label="Наш адрес электронной почты info@ipsum228.com">info@ipsum228.com</a>
+        </li>
+        <li class="page-footer__contacts-item">
+          <svg width="20" height="20">
+            <use xlink:href="img/sprite.svg#icon-vk"></use>
+          </svg>
+          <a class="page-footer__contacts-link" href="https://vk.com/" aria-label="Вконтакте">Мы вконтакте</a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+  <div class="modal modal--blackout hidden">
+    <div class="modal__content">
+      Ваш заказ оформлен! Скоро мы с вами свяжемся.
+      <button class="modal__btn-close" type="button" aria-label="Закрыть модальное окно"></button>
+    </div>
+  </div>
+  <script src="js/rSlider.min.js"></script>
+  <script src="js/main.min.js"></script>
 </body>
 </html>
